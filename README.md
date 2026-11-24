@@ -15,16 +15,10 @@ Read the [case study](docs/case-study.md), [architecture](docs/architecture.md) 
 
 ## Run locally
 
-PHP 8.1+ is sufficient for the offline tests. No database, credentials or network access are required.
-
-```sh
-php tests/run.php
-```
-
-The optional live voice demo additionally requires PHP cURL and your own ElevenLabs credentials. Set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your environment, then run `php examples/voice-demo.php`. It writes `sample.mp3` locally and may consume paid credits. Do not commit credentials or generated audio.
+The optional live voice demo requires PHP 8.1+, PHP cURL and your own ElevenLabs credentials. Set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your environment, then run `php examples/voice-demo.php`. It writes `sample.mp3` locally and may consume paid credits. Do not commit credentials or generated audio.
 
 ## Scope and provenance
 
-The examples are portfolio adaptations of existing RadiYO! functionality, prepared with AI assistance. They are not verbatim production files or a deployable CRM. Voice synthesis is implemented in the product code; live deployment and usage metrics for this feature are not asserted here. RAG is a development direction, not a shipped capability claimed by this portfolio. The offline tests exercise the showcase implementations, not the production system. The live provider call has not been tested as part of this package.
+The examples are portfolio adaptations of existing RadiYO! functionality, prepared with AI assistance. They are not verbatim production files or a deployable CRM. Voice synthesis is implemented in the product code; live deployment and usage metrics for this feature are not asserted here. RAG is a development direction, not a shipped capability claimed by this portfolio. The live provider call has not been tested as part of this package.
 
 Copyright retained. See [licence](LICENSE).
